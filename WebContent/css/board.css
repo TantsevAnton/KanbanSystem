@@ -1,0 +1,229 @@
+body {
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#user {
+    width: 50px;
+    background: gold;
+    padding: 25px 75px;
+    font-size: 20px;
+    margin: 0 0 0 10%;
+}
+
+#menu {
+    width: 180px;
+    background: lightblue;
+    margin: 0 0 0 auto;
+    padding: 10px;
+    text-align: right;
+    display: none;
+}
+
+#menu button {
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247, 249, 249);
+    margin: 0;
+    height: 80px;
+}
+
+header h1 {
+    flex: 1 1 20%;
+    display: inline;
+    margin: 10px 5% 10px 1%;
+    padding-top: 10px;
+}
+
+header h2 , #workerID, #userType {
+    display: none;
+}
+
+.newTask {
+    flex: 1 1 1%;
+    display: inline;
+    margin: 16px 25% 16px 11.25%;
+    padding: 10px 10px;
+    color: black;
+    font-size: 1rem;
+    background-color: gold;
+    border: 2px solid #007bff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    text-align:  center;
+}
+
+.newTask:hover {
+    background-color: yellowgreen;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 90vh;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-top: 10px;
+    flex: 17 10 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-top: 10px;
+    flex: 17 10 80%;
+}
+
+.edit-menu {
+    display: block;
+    flex: 3 2 20%;
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #ececec;
+    border-left-width: 0.9rem;
+    margin-top: 2.175rem;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.columns-column {
+    flex: 1 1;
+    margin: 0 10px 0 10px;
+    min-width: calc(100% / 6.5);
+    max-width: calc(100% / 3.3);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.columnName {
+    display: inline;
+}
+
+.tasks {
+    max-width: 100%;
+    list-style-type: none;
+    background-color: rgb(234, 234, 234);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.task {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    margin-bottom: 0.1rem;
+    font-size: 0.8rem;
+    border: 1px solid #c3c3c3;
+    border-left: 4px solid #fff;
+    background: #fff;
+}
+
+.high {
+    border-left-color: #f00;
+}
+
+.medium {
+    border-left-color: #ff7f27;
+}
+
+.low {
+    border-left-color: #00ff00;
+}
+
+.taskID {
+    display: inline-block;
+    margin: 0 0 0.3rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+p.taskID {
+    color: black;
+}
+
+a.taskID {
+    color: #6196c5;
+    text-decoration: none;
+}
+
+a.taskID:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.taskName {
+    max-width: 70%;
+    margin: 0 0 0.5rem 1.5rem;
+    width: 100%;
+}
+
+.changePriority {
+    position: absolute;
+    top: 2rem;
+    left: 0.3rem;
+}
+
+.fa-arrow-up {
+    color: #f00;
+}
+
+.fa-arrow-down {
+    color: #00ff00;
+}
+
+.form-edit-menu {
+    margin: 1.2rem 0 0 1.5rem;
+}
+
+#close-menu {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+}
+
+p {
+    margin: 0;
+}
+
+.form-group {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.closed {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: #6a9cad;
+    border-color: #6a9cad;
+}

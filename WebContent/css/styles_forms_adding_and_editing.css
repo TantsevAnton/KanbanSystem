@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-basis: 8%;
+    background-color: rgb(247, 249, 249);
+    margin: 0px 0px 10px 0px;
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 15px 0px 10px 50px;
+}
+
+main {
+    font-size: 0.9rem;
+}
+
+form {
+    margin-left: 5%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: calc(50% + 1.5rem);
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-control {
+    display: inline-block;
+    width: 50%;
+    height: calc(1.2em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.btn {
+    padding: .375rem .75rem;
+    color: black;
+    background-color: gold;
+    border-color: #007bff;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin-right: .375rem;
+}
+
+ {
+    background-color: yellowgreen;
+}
+
+.wrap-popup {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+
+.wrap-popup .popup-content {
+    margin: 5rem auto 0px auto;
+    width: 460px;
+    height: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.popup-content h2 {
+    font-size: 1.5rem;
+}
+
+.popup-content {
+    position: relative;
+}
+
+#buttonClosePopUp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#ChangePassword {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    color: black;
+    font-size: 1rem;
+    background-color: gold;
+    border: 2px solid #007bff;
+    border-radius: 0.25rem;
+}
+
+.btn:hover, #ChangePassword:hover {
+    background-color: yellowgreen;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: #6a9cad;
+    border-color: #6a9cad;
+}

@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#user {
+    width: 50px;
+    background: gold;
+    padding: 25px 75px;
+    font-size: 20px;
+    margin: 0 0 0 10%;
+}
+
+#menu {
+    width: 180px;
+    background: lightblue;
+    margin: 0 0 0 auto;
+    padding: 10px;
+    text-align: right;
+    display: none;
+}
+
+#menu button {
+    font-size: 15px;
+}
+
+header {
+    flex-basis: 9%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247, 249, 249);
+    margin: 0;
+    height: 80px;
+}
+
+header h1 {
+    flex: 1 1 20%;
+    display: inline;
+    margin: 10px 5% 10px 1%;
+    padding-top: 10px;
+}
+
+.newUser {
+    flex: 1 1 1%;
+    display: inline;
+    margin: 16px 25% 16px 11.25%;
+    padding: 10px 10px;
+    color: black;
+    font-size: 1rem;
+    background-color: gold;
+    border: 2px solid #007bff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.newUser:hover {
+    background-color: yellowgreen;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+form {
+    font-family: sans-serif;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#header th {
+    background: rgb(227,234,243);
+    text-transform: uppercase;
+    color: rgb(124,146,168);
+    font-size: 0.7em;
+    padding: 7px;
+}
+
+td {
+    padding: 18px;
+}
+
+td a {
+    color: rgb(77,100,123);
+    text-decoration: none;
+}
+
+tr {
+    color: rgb(77,100,123);
+    text-align:  center;
+}
+
+tr:nth-child(2n) {
+    background: rgb(242,246,250);
+}
+
+tr:nth-child(2n+1) {
+    background: rgb(232, 237, 244);
+}
+
+.applyChanges {
+    padding: .375rem .75rem;
+    color: black;
+    background-color: gold;
+    border-color: #007bff;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin-top: .75rem;
+    align-self: center;
+}
+
+.applyChanges:hover {
+    background-color: yellowgreen;
+}
